@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "poppins" sans-serif;
+    }
+    
+   .section-heading{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 42px;
+        color: #c94f4f;
+    }
+    .section-heading::after{
+        content:"";
+        height: 4px;
+        width: 230px;
+        background-color: blue;
+        display: block;
+        margin: auto;
+    }
+    section{
+      width: 100%;
+      display: grid;
+      place-items: center; 
+      background:url(bad.jpg); 
+      background-size: cover;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column{
+        width: 100%;
+        padding: 0 1em 1em 1em;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: 100%;
+        padding: 2em 1.5em;
+        background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+        background-size: 100% 200%;
+        background-position: 0 2.5%;
+        border-radius: 5px;
+        box-shadow: 0 0 35px rgba(0,0,0,0.12);
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    h3{
+       font-size: 20px;
+        font-weight: 600;
+        color: #1f194c;
+        margin: 1em 0;
+    }
+    p{
+        color: #575a7b;
+        font-size: 15px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
+    }
+    .icon-wrapper{
+       background-color: #2c7bfe;
+        position: relative;
+        margin: auto;
+        font-size: 30px;
+        height: 2.5em;
+        width: 2.5em;
+        color: #ffffff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center; 
+        transition: 0.5s;
+    }
+    .card:hover{
+        background-position: 0 100%;
+    }
+    .card:hover .icon-wrapper{
+        background-color: #ffffff;
+        color: #2c7bfe;
+    }
+    .card:hover h3{
+        color: #ffffff;
+    }
+    .card:hover p{
+        color: #f0f0f0;
+    }
+    footer{
+    padding: 2px;
+    background: rgba(0, 0,0, 0.6);
+}
+footer p{
+    color:#fff;
+    text-align: center;
+}
+    @media screen and (min-width: 768px){
+        section{
+            padding:0 2em;      
+        }
+        .column{
+            flex: 0 50%;
+            max-width: 50%;
+        }
+    }
+    @media screen and (min-width: 992px){
+        section{
+            padding: 1em 3em;
+        }
+        .column{
+            flex:0 0 33.33%;
+            max-width: 33.33%;
+        }
+    }
+</style>
+<body>
+    <section>
+        <div class="row">
+            <h2 class="section-heading">Our Services</h2>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Website Development</h3>
+                <p>At our SoftLumina KE Company, we don't just build websites; 
+                    we craft digital experiences. Our team of seasoned developers,
+                     designers, and strategists collaborates to bring your vision to life.
+                      We don't settle for the ordinary; we strive for extraordinary 
+                      results that resonate with your audience.Our web development 
+                      prowess extends across a wide spectrum of technologies. 
+                      From robust backend solutions to sleek front-end interfaces,
+                       we leverage the latest tools and frameworks to ensure your 
+                       website stands out in the digital landscape.</p>
+            </div>
+          </div> 
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>App Development</h3>
+                <p>In todays' most users have opted to finding specific site
+                    on a app since searching for Urls sometimes does not work
+                     efficient for some Users. We are here to meet your desires
+                     of owning a App for your business and other online promotions 
+                     you may need to archive. Our App Designs have capability to meet
+                     your needs.
+                </p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Mobile Applications</h3>
+                <p>The number of mobile users today is greater than the number of desktop users.
+                     Businesses have realized the need to effectively use mobile channels for attracting 
+                     and connecting customers. They have started new operations (or scaled existing ones)
+                      through mobile applications. Our mobile applications have the capability to meet 
+                      your unique clients need.</p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3>Web Portals</h3>
+                <p>These are specially designed websites that serves as 
+                    a single source of information and enables interactive
+                     communication between the organization and the portal users.
+                    Portals provide features like task management and 
+                collaboration.Some typical exapmles are Staff portal and students portal 
+            which helps both students and staff to access some personal informations</p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-link"></i>
+                </div>
+                <h3>System Intergration</h3>
+                <p>We deliver seamless business systems for operational excellence. 
+                    Our team manages all aspects of solution design and implementation,
+                     and work with our clients to develop, implement, and maintain systems 
+                     that will support and enhance their overall business strategy.
+                      Our delivery model adds quality, scalability, predictability and flexibility.</p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Web Mantainance</h3>
+                <p>A system to run smoothly needs upgrades, checkups and mantainance.
+                    We offer mantainance services to every kind of System for it to work
+                    efficiently and allow user emjoy the interaction with sites.Reach us 
+                    and we are able to help you meet the mantainanceof your software or website.
+                </p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Security Services</h3>
+                <p>Security of a good website should be the first 
+                    the first task to tackle we as SoftLumina KE to 
+                    avoid the sites and softwares to be corrupted. Our Security
+                    team offers secures the Softwares and websites from attacks
+                    and Vulnerabilities like DDOS, phishing and more to ensure 
+                    the users data is safe.
+                </p>
+            </div>
+          </div>  
+          <div class="column">
+            <div class="card">
+                <div class="icon-wrapper">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Web Hosting</h3>
+                <p> Empower Your Online Presence with SoftLumina KE Company,
+                    where we redefine reliability, speed, and security in the realm of web hosting.
+                     Our comprehensive hosting services are designed to meet the diverse 
+                     needs of businesses and individuals, providing a solid foundation
+                      for your online success.Our Hosting are as shared hosting, VPS Hosting,
+                      Dedicated server hosting, Wordpress hosting and Our team is available 24/7.
+                    </p>
+            </div>
+          </div>   
+        </div>
+    </section>
+    <footer class="text-center">
+        <p>Copyright &copy; 2024 All Rights Reserved by SofLumina KE</p>
+      </footer>
+</body>
+</html>
